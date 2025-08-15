@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Workshop Guide: Front-End Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome, Back-End Team! Your mission is to display a new piece of data in our React application.
 
-## Available Scripts
+## Your Goal
 
-In the project directory, you can run:
+Display the `jobTitle` property (which you just added to the API) on the user's profile page.
 
-### `npm start`
+### Step 1: Find the File
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The main file you'll need to modify is the user profile component:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Path: `src/UserProfile.js`
 
-### `npm test`
+You may also need to check the API URL in `src/api.js` to ensure it matches the port your .NET API is running on.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2: Run the Project
 
-### `npm run build`
+1. Open a terminal or command prompt in the front-end project folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Run `npm install` to download all the necessary packages. (You only need to do this once).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run `npm start` to build the project and open it in your browser. The page will automatically reload if you make changes to the code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 3: Your Task
 
-### `npm run eject`
+1. In `src/UserProfile.js`, find the `return (...)` block. This is the HTML-like code (called JSX) that gets rendered to the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Add a new element to display the `jobTitle` from the `user` object. For example: `<h3>{user.jobTitle}</h3>`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Save the file and look at your browser. The page should update automatically to show the new job title.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Remember:** Your front-end partner is your "Navigator." They can't touch the keyboard, but they are here to guide you and answer any questions you have about React, JSX, or VS Code!
